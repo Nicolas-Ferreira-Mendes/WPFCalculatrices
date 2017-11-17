@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfCalculatrice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCalculatrice"
+        mc:Ignorable="d"
+        Title="Calculatrice" Height="291.176" Width="476.961">
+    <Grid Margin="0,0,2,4">
+        <TextBox x:Name="tbxNumber1" HorizontalAlignment="Left" Height="23" Margin="181,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnAdd" Content="+" HorizontalAlignment="Left" Margin="46,143,0,0" VerticalAlignment="Top" Width="75" Height="39" Click="Btn_Add"/>
+        <Button x:Name="btnSub" Content="-" HorizontalAlignment="Left" Margin="139,143,0,0" VerticalAlignment="Top" Width="75" Height="39" Click="btnSub_Click"/>
+        <Button x:Name="btnMult" Content="*" HorizontalAlignment="Left" Margin="236,143,0,0" VerticalAlignment="Top" Width="75" Height="39" Click="btnMult_Click"/>
+        <Button x:Name="btnDiv" Content="/" HorizontalAlignment="Left" Margin="331,143,0,0" VerticalAlignment="Top" Width="75" Height="39" Click="btnDiv_Click"/>
+        <TextBox x:Name="tbxNumber2" HorizontalAlignment="Left" Height="23" Margin="181,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblResponse" Content="" HorizontalAlignment="Left" Margin="139,209,0,10" VerticalAlignment="Center" Width="214" FontSize="20" VerticalContentAlignment="Center"/>
+    </Grid>
+</Window>
